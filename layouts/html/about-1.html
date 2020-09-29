@@ -18,7 +18,7 @@
 
     <!-- load google font -->
     <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,700,700i" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
     <!-- all stylesheets include start -->
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -69,7 +69,7 @@
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-eight.css" title="color-eight" media="screen" />
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-nine.css" title="color-nine" media="screen" />
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-ten.css" title="color-ten" media="screen" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- jquery latest version -->
     <script src="assets/js/jquery-3.1.1.min.js"></script>
 
@@ -87,7 +87,22 @@
     <script src="assets/js/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="assets/js/rev_slider/extensions/revolution.extension.video.min.js"></script>
     <!-- revolution slider js files end -->
+    <script src="http://jjcosgrove.github.io/jquery-aniview/js/jquery.aniview.js"></script>
+    <script>
+       /* var options = {
+        animateThreshold: 100,
+        scrollPollInterval: 20
+    }*/
+    $(document).ready(function() {
+        var options = {
+        animateThreshold: 200
+    };
+    $('.aniview').AniView(options);
 
+    
+    })
+    
+        </script>
 </head>
 
 <body>
@@ -406,7 +421,7 @@
         <!-- End Breadcrumb Section -->
 
         <!-- Start About Section -->
-        <section class="pad-t100 pad-b50">
+        <section class="pad-t100 pad-b50 aniview" data-av-animation="slideInLeft">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mb20 animatable bounceInLeft">
@@ -458,7 +473,7 @@
         <!-- End About Section -->
 
         <!-- Start Services Section -->
-        <section class="pad-b70 pad-t70 bg-gray-light">
+        <section class="pad-b70 pad-t70 bg-gray-light aniview" data-av-animation="slideInRight">
             <div class="container">
                 <div class="row">
                     <div class="section-title text-center">
@@ -535,10 +550,11 @@
                 </div>
             </div>
         </section>
+        
         <!-- End Services Section -->
 
         <!-- Start Animated Counter -->
-        <section class="pad-t80 pad-b50 bg-gray-dark">
+        <section class="pad-t80 pad-b50 bg-gray-darkaniview" data-av-animation="slideInLeft">
             <div class="container">
 
                 <div class="row">
@@ -608,7 +624,7 @@
         <!-- End Animated Counter -->
 
         <!-- Start team Section -->
-        <section class="pad-b70 pad-t70">
+        <section class="pad-b70 pad-t70aniview" data-av-animation="slideInRight">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -705,7 +721,7 @@
         <!-- End team Section -->
 
         <!-- Start price table Section -->
-        <section class="pad-t100 pad-b70 bg-gray-dark white">
+        <section class="pad-t100 pad-b70 bg-gray-dark white aniview" data-av-animation="slideInLeft">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -787,7 +803,7 @@
         <!-- End price table Section -->
 
         <!-- Start client Section -->
-        <section class="pad100 bg-gray-light">
+        <section class="pad100 bg-gray-light aniview" data-av-animation="slideInRight">
             <div class="container">
                 <div class="row">
                     <div class="section-title text-center">
@@ -843,7 +859,7 @@
         <!-- End client Section -->
 
         <!-- Start Footer & Copyright Section -->
-        <section class="footer-section pad-t70 pad-b50 bg-gray-dark">
+        <section class="footer-section pad-t70 pad-b50 bg-gray-dark aniview" data-av-animation="slideInLeft">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 mb-md-20">
@@ -1056,7 +1072,8 @@
     <!-- template main js file -->
     <script src="assets/js/main.js"></script>
     <!-- all js include end -->
-
+    
+    
 </body>
 
 </html>
